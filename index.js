@@ -17,6 +17,7 @@ wss.on("connection", (ws) => {
     console.log("🔴 Verbindung geschlossen");
   });
 });
+
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
   console.log(`✅ Server läuft auf Port ${PORT}`);
