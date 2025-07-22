@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini WebSocket Game</title>
+</head>
+<body>
+  <h1>Mini WebSocket Game</h1>
+  <button onclick="sendMessage()">Send Hello</button>
+  <pre id="log"></pre>
+
+  <script>
+    const socket = new WebSocket("wss://your-backend-url.onrender.com");
+
+    socket.onopen = () => {
+      log("✅ WebSocket verbunden");
+    };
+
+    socket.onmessage = (event) => {
+      log("📥 Server: " + event.data);
+    };
+
+    function sendMessage() {
+      socket.send("Hello from client");
+    }
+
+    function log(msg) {
+      document.getElementById("log").textContent += msg + "\n";
+    }
+  </script>
+</body>
+</html>
