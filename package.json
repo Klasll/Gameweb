@@ -1,0 +1,23 @@
+{
+  "name": "gameweb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Klasll/Gameweb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Klasll/Gameweb/issues"
+  },
+  "homepage": "https://github.com/Klasll/Gameweb#readme",
+  "description": "",
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}
